@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+body {
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ul-second-el {
+    display: none;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.size {
+    width: 100vw;
+}
+
+.header {
+    height: 4rem;
+}
+
+.c-item-one {
+    min-height: calc(100vh - 4rem);
+    width: 100%;
+    background-image: url("../images/carouselImgOne.jpeg");
+    background-attachment: fixed;
+    background-position: 0px 20px;
+    background-size: cover;
+}
+
+.c-item-two {
+    min-height: calc(100vh - 4rem);
+    width: 100%;
+    background-image: url("../images/carouselImgTwo.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.sub-text {
+    text-align: justify;
+}
+
+.text-main {
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.bg-img-one {
+    background-image: url("../images/home-about-img-1.jpg");
+}
+
+.bg-img-two {
+    background-image: url("../images/home-about-img-2.jpg");
+}
+
+.bg-img-three {
+    background-image: url("../images/home-about-img-3.jpg");
+}
+
+@media screen and (min-width: 992px) {
+    .header-el {
+        width: 20vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ul-frist-el {
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ul-frist-el li {
+        padding-right: 0.4rem;
+    }
+
+    .ul-second-el {
+        display: flex;
+        justify-content: center;
+        width: 30vw;
+    }
+
+    .ul-second-el li {
+        padding-left: 1.4rem;
+    }
+
+    .carousel-caption {
+        position: relative;
+        top: 200px;
+    }
+
+    .text-main {
+        font-size: 4rem;
+    }
+
+    .text-container {
+        padding: 4rem 0rem;
+    }
+
+    .text-lg-container {
+        padding-right: 4rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .text-md-container {
+        padding-right: 4rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .text-container {
+        padding: 0rem 4rem;
+    }
+}
