@@ -71,7 +71,7 @@ body {
     background-image: url("../images/home-about-img-3.jpg");
 } */
 .img-container {
-    height: 60vh;
+    height: 70vh;
     cursor: pointer;
     overflow: hidden;
 }
