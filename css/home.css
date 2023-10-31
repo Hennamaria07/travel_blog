@@ -4,22 +4,27 @@ body {
     font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
+
+                      /* NAVBAR */
 .ul-second-el {
     display: none;
 }
-
-.full-height {
-    height: 100vh;
-}
-
 .size {
     width: 100vw;
 }
 
+
+                      /* HEADER*/
 .header {
     height: 4rem;
 }
-
+.carousel {
+  min-width: 100vw;
+  min-height: calc(100vh - 4rem);
+  overflow: hidden;
+  background-color: black;
+}
 .c-item-one {
     min-height: calc(100vh - 4rem);
     width: 100%;
@@ -37,7 +42,13 @@ body {
     background-position: center;
     background-size: cover;
 }
+.booking-btn {
+    border: none;
+    background: #EF6C57;
+    padding: 16px 48px;
+}
 
+                    /* MAIN SECTION ONE*/
 .sub-text {
     text-align: justify;
 }
@@ -48,7 +59,7 @@ body {
     text-transform: uppercase;
 }
 
-.bg-img-one {
+/* .bg-img-one {
     background-image: url("../images/home-about-img-1.jpg");
 }
 
@@ -58,8 +69,21 @@ body {
 
 .bg-img-three {
     background-image: url("../images/home-about-img-3.jpg");
+} */
+.img-container {
+    height: 60vh;
+    cursor: pointer;
+    overflow: hidden;
 }
-
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+img:hover {
+    transform: scale(1.2);
+    transition: all 500ms;
+}
 @media screen and (min-width: 992px) {
     .header-el {
         width: 20vw;
@@ -103,6 +127,19 @@ body {
     .text-lg-container {
         padding-right: 4rem;
     }
+    .full-height {
+        height: 100vh;
+    }
+    .img-wrapper {
+        position: relative;
+        bottom: 8rem;
+        z-index: 1;
+    }
+    .img-caption {
+        position: absolute;
+        top: 23rem;
+        z-index: 2;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -111,8 +148,19 @@ body {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 576px) and (max-width: 767px){
     .text-container {
         padding: 0rem 4rem;
+    }
+    .carousel-item {
+        background-position: center;
+    }
+}
+@media screen and (max-width: 575px){
+    .text-container {
+        padding: 0rem 4rem;
+    }
+    .c-item-one {
+        background-position: -30px;
     }
 }
