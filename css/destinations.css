@@ -1,3 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
 .header-img-container{
     width: 100vw;
     height: calc(100vh - 4rem);
@@ -21,12 +29,39 @@
 }
 footer {
     background-color: #333333;
-    height: 100vh;
-    width: 100vw;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue","Poppins", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.text-align {
+    text-align: start;
+    color: rgba(255, 255, 255, 0.334);
+}
+.footer-navbar-nav {
+    list-style: none;
+    padding: 0px;
+}
+.footer-navbar-nav li {
+    margin-bottom: 5px;
+}
+.footer-navbar-nav li:hover {
+    color: #ffffff;
+}
+.email-el {
+    border: solid 1px rgba(255, 255, 255, 0.334);
+    background-color: #333333;
+    height: 2rem;
+    color: #ffffff;
+}
+.email-btn {
+    border: none;
+    background-color: #EF6C57;
+    color: #ffffff;
+    height: 2.1rem;
+    min-width: 3.4rem;
+    cursor: pointer;
+}
+.footer-icon-color {
+    color: rgba(255, 255, 255, 0.334);
+    cursor: pointer;
 }
 @media screen and (min-width: 992px) {
     .grid-container {
@@ -53,6 +88,10 @@ footer {
     img:hover {
         transform: scale(1.2);
         transition: all 500ms;
+    }
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -81,6 +120,11 @@ footer {
     img:hover {
         transform: scale(1.2);
         transition: all 500ms;
+    }
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -112,6 +156,11 @@ footer {
     }
     .hidden-text {
         display: none;
+    }
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 }
 @media screen and (max-width: 575px) {
@@ -146,5 +195,10 @@ footer {
     }
     .hidden-text {
         display: none;
+    }
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 }
