@@ -25,6 +25,10 @@
     height: 8rem;
     border-radius: 50%;
 }
+.about-icon i {
+    color: #EF6C57;
+    cursor: pointer;
+}
 @media screen and (min-width: 992px) {
     .about-grid-container {
         display: grid;
