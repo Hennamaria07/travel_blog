@@ -9,7 +9,7 @@ body {
 .header-img-container{
     width: 100vw;
     height: calc(100vh - 4rem);
-    background-image: url('../images/carouselImgTwo.jpeg');
+    background-image: url('../images/destination-header-img.avif');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
