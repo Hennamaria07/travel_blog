@@ -8,3 +8,51 @@
 .text-grey {
     color: gray;
 }
+.about-header-img-container {
+    width: 100vw;
+    height: calc(100vh - 4rem);
+    background-image: url('../images/about-header.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about-img {
+    filter: brightness(0.8);
+}
+.person-img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+@media screen and (min-width: 992px) {
+    .about-grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .team-grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .about-grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .about-grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 575px) {
+    .des-heading-el{
+        font-size: 2rem;
+    }
+}

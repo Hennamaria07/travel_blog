@@ -152,4 +152,7 @@ footer {
     .c-item-one {
         background-position: -30px;
     }
+    .des-heading-el {
+        font-size: 1.2rem;
+    }
 }
